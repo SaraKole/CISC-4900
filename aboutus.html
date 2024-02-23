@@ -18,6 +18,9 @@
             padding: 20px;
             background-color: transparent; 
             border-bottom: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         section {
             margin: 20px 0;
@@ -27,6 +30,29 @@
         }
         h1 {
             color: #000000;
+            
+        }
+        .nav-area {
+            float: right;
+            list-style: none;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        .nav-area li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        .nav-area li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-area li a:hover {
+            background: #fff;
+            color: #333;
         }
     </style>
 </head>
@@ -34,6 +60,13 @@
 
     <header>
         <h1>About Us</h1>
+        <ul class="nav-area">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Find my Degree</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
     </header>
 
     <section>
