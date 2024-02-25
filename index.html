@@ -4,138 +4,136 @@
     <meta charset="UTF-8">
     <title>Degree 4 Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-      
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background: #000000;
+            height: 100vh;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        .nav-area {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            list-style: none;
+        }
+        .nav-area li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .nav-area li a {
+            color: #F0FFFF;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: poppins;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .nav-area li a:hover {
+            background: #fff;
+            color: #333;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .welcome-text h1 {
+            color: #00fecb;
+            text-transform: uppercase;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .welcome-text button {
+            border: 1px solid #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .welcome-text button:hover {
+            background: #fff;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .nav-area {
+                position: static;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .nav-area li {
+                display: block;
+                margin: 10px 0;
+            }
+            .nav-area li a {
+                padding: 5px;
+                font-size: 14px;
+            }
+            .logo {
+                position: static;
+                margin-bottom: 20px;
+            }
+            .welcome-text {
+                width: 90%;
+                margin-left: 5%;
+            }
+            .welcome-text h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
 </head>
 <body>
-<style>
-*{
-	margin: 0;
-	padding: 0;
-}
-body {
-	font-family: 'Poppins', sans-serif;
-}
-.wrapper {
-	width: 1170px;
-	margin: auto;
-}
-header {
-	background: #000000;
-	height: 100vh;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-}
-.nav-area {
-	float: right;
-	list-style: none;
-	margin-top: 30px;
-}
-.nav-area li {
-	display: inline-block;
-}
-.nav-area li a {
-	color: #F0FFFF;
-	text-decoration: none;
-	padding: 5px 20px;
-	font-family: poppins;
-	font-size: 16px;
-	text-transform: uppercase;
-}
-.nav-area li a:hover {
-	background: #fff;
-	color: #333;
-}
-.logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 10px; 
-    }
-
-.logo img {
-        width: 200px; 
-        height: auto; 
-    }
-.welcome-text {
-	position: absolute;
-	width: 600px;
-	height: 300px;
-	margin: 20% 30%;
-	text-align: center;
-}
-.welcome-text h1 {
-	text-align: center;
-	color: #00fecb;
-	text-transform: uppercase;
-	font-size: 60px;
-}
-.welcome-text a {
-	border: 1px solid #fff;
-	padding: 10px 25px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 14px;
-	margin-top: 20px;
-	display: inline-block;
-	color: #fff;
-}
-.welcome-text a:hover {
-	background: #fff;
-	color: #333;
-}
-/*resposive*/
-
-@media (max-width:600px) {
-	.wrapper {
-		width: 100%;
-	}
-	.logo {
-		float: none;
-		width: 50%;
-		text-align: center;
-		margin: auto;
-	}
-	.nav-area {
-		float: none;
-		margin-top: 0;
-	}
-	.nav-area li a {
-		padding: 5px;
-		font-size: 11px;
-	}
-	.nav-area {
-		text-align: center;
-	}
-	.welcome-text {
-		width: 100%;
-		height: auto;
-		margin: 30% 0;
-	}
-	.welcome-text h1 {
-		font-size: 30px;
-	}
-}
- </style>
     <header>
-    
-        <div class="logo">
-           <img src="Degree4Me_Logo3.png" alt="Degree 4 Me">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="Degree4Me_Logo3.png" alt="Degree 4 Me">
+            </div>
+            <ul class="nav-area">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Find my Degree</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
         </div>
-<ul class="nav-area">
-<li><a href="homepage.html">Home</a></li>
-<li><a href="aboutus.html">About Us</a></li>
-<li><a href="#">Help</a></li>
-<li><a href="#">Find my Degree</a></li>
-<li><a href="contact.html">Contact us</a></li>
-</ul>
-</div>
-<div class="welcome-text">
-        <h1>Take our quiz now!</h1>
-		<button type="button" title="Begin quiz">Start</button>
-    </div>
-</header>
-
+        <div class="welcome-text">
+            <h1>Take our quiz now!</h1>
+            <button type="button" title="Begin quiz">Start</button>
+        </div>
+    </header>
 </body>
 </html>
