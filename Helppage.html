@@ -5,88 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help</title>
     <style>
-        html, body {
+        body {
             font-family: 'Poppins', sans-serif;
-            margin: 0px;
-            height: 100%;
-            background: linear-gradient(to top, #00fecb, white) no-repeat;
-            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
             text-align: center;
         }
-        header {
-            text-align: center;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
-            background-color: transparent; 
-            border-bottom: 2px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        section {
-            margin-bottom: 40px;
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        h2 {
-            color: #000000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #000000;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00fecb;
         }
-        .nav-area {
-            float: right;
-            list-style: none;
-            margin-top: 10px;
-            margin-right: 20px;
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
-
-        .nav-area li {
-            display: inline-block;
-            margin-left: 15px;
-        }
-
-        .nav-area li a {
-            color: #000000;
+        a {
+            color: #00fecb;
             text-decoration: none;
-            font-size: 16px;
+            transition: color 0.3s ease;
         }
-
-        .nav-area li a:hover {
-            background: #fff;
-            color: #333;
+        a:hover {
+            color: #007c75;
         }
-   
-        .html-tag { color: #008000; } 
-        .html-attribute { color: #FF4500; }
-        .html-value { color: #0000FF; } 
     </style>
 </head>
 <body>
-
-    <header>
-        <h1 class="html-tag">Help</h1>
-        <ul class="nav-area">
-            <li><a href="index.html" class="html-tag">Home</a></li>
-            <li><a href="aboutus.html" class="html-tag">About Us</a></li>
-            <li><a href="help.html" class="html-tag">Help</a></li>
-            <li><a href="#" class="html-tag">Find my Degree</a></li>
-            <li><a href="contact.html" class="html-tag">Contact us</a></li>
-        </ul>
-    </header>
-
-    <section>
-        <h2 class="html-tag">Need Help?</h2>
-        <p>If you need assistance or have any questions, feel free to contact us using the information provided below.</p>
-    </section>
-
-    <section>
-        <h2 class="html-tag">Contact Information</h2>
-        <p>Email: help@degree4me.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
-
+    <div class="container">
+        <h1>Need Help?</h1>
+        <p>If you require assistance or have any questions, please feel free to <a href="contact.html">contact us</a>.</p>
+    </div>
 </body>
 </html>
-
