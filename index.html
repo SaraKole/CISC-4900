@@ -133,9 +133,15 @@
         </div>
         <div class="welcome-text">
             <h1>Take our quiz now!</h1>
-            <button type="button" title="Begin quiz">Start</button>
+            <button type="button" id="start" title="Begin quiz">Start</button>
         </div>
     </header>
+    <script>
+        document.getElementById('start').addEventListener('click', function() {
+        window.location.href = 'QuizQuestions/q1.html';
+    });
+
+    </script>
 </body>
 </html>
 
