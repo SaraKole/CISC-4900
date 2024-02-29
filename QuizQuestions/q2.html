@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Background Page</title>
+  <link rel="stylesheet" href="quizStyle.css">
+</head>
+<body>
+    <body>
+        
+        <div id = "questionBox"> 
+        <h1>Q2: You enjoy outdoor activities</h1>
+        </div>
+      
+        <div id = "questionButtons">
+          <button onclick="recordAnswer('option1')">Agree</button>
+          <button onclick="recordAnswer('option2')">Strongly Agree</button>
+          <button onclick="recordAnswer('option3')">Disagree</button>
+          <button onclick="recordAnswer('option4')">Strongly Disagree</button>
+        </div>
+
+        <div id="navigationButtons">
+          <a href="q1.html"><button id="backButton">Back</button></a>
+          <a href="q3.html"><button id="nextButton">Next</button></a>
+        </div>
+      
+        <script>
+          function recordAnswer(answer) {
+            console.log("Chosen answer: " + answer);
+            // Create variable that keep track of value total per catergory
+          }
+        </script>
+      
+      </body>
+</body>
+</html>
