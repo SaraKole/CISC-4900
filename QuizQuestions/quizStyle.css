@@ -5,3 +5,14 @@ body {
     margin: 0; 
     padding: 20px; 
   }
+
+  #questionBox {
+    border: 2px solid #00fecb;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #questionButtons {
+    text-align: center;
+  }
