@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Degree 4 Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background: #000000;
+            height: 100vh;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        .nav-area {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            list-style: none;
+        }
+        .nav-area li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .nav-area li a {
+            color: #F0FFFF;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: poppins;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .nav-area li a:hover {
+            background: #fff;
+            color: #333;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .welcome-text h1 {
+            color: #00fecb;
+            text-transform: uppercase;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .welcome-text button {
+            border: 1px solid #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .welcome-text button:hover {
+            background: #fff;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .nav-area {
+                position: static;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .nav-area li {
+                display: block;
+                margin: 10px 0;
+            }
+            .nav-area li a {
+                padding: 5px;
+                font-size: 14px;
+            }
+            .logo {
+                position: static;
+                margin-bottom: 20px;
+            }
+            .welcome-text {
+                width: 90%;
+                margin-left: 5%;
+            }
+            .welcome-text h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="Degree4Me_Logo3.png" alt="Degree 4 Me">
+            </div>
+            <ul class="nav-area">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="Helppage.html">Help</a></li>
+                <li><a href="#">Find my Degree</a></li>
+                <li><a href="contact.html">Department Contacts </a></li>
+                <li><a href="Contactus.html">Contact us! </a></li>
+            </ul>
+        </div>
+        <div class="welcome-text">
+            <h1>Take our quiz now!</h1>
+            <button type="button" id="start" title="Begin quiz">Start</button>
+        </div>
+    </header>
+    <script>
+        document.getElementById('start').addEventListener('click', function() {
+        window.location.href = 'QuizQuestions/q1.html';
+    });
+
+    </script>
+</body>
+</html>
+
+
+
